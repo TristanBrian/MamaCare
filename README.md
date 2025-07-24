@@ -1,6 +1,6 @@
 # MamaCare - Maternal Health Platform
 
-![MamaCare Preview](https://example.com/mamacare-preview.png)
+![MamaCare Preview](https://mmamacare.netlify.app/prenatal)
 
 Multilingual, AI-powered maternal health support system
 
@@ -214,4 +214,4 @@ MIT License © 2025 MamaCare Team
 
 ## 📬 Contact
 
-dev@mamacare.org | [Live Demo](https://example.com/mamacare-demo)
+dev@mamacare.org | [Live Demo](https://mmamacare.netlify.app/prenatal)
