@@ -51,7 +51,7 @@ const translations = {
     'contact': 'Contact',
     'privacy_policy': 'Privacy Policy',
     'terms': 'Terms of Service',
-    'copyright': '© 2023 Maternal Care Hub. All rights reserved.'
+    'copyright': '© 2025 MamaCare. All rights reserved. | Tristan.Dev'
   },
   sw: {
     // Navigation
