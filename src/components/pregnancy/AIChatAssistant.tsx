@@ -28,6 +28,11 @@ const AIChatAssistant: React.FC<AIChatAssistantProps> = ({ initialQuestion }) =>
     // Add user query to chat log
     setChatLog(prev => [...prev, { user: q, response: '' }]);
 
+    // Send user query to Chatbase
+    if (window.chatbase) {
+      window.chatbase('track', 'user_message', { message: q });
+    }
+
     try {
       const response = await fetch('/api/ai-assistant', {
         method: 'POST',
@@ -41,6 +46,11 @@ const AIChatAssistant: React.FC<AIChatAssistantProps> = ({ initialQuestion }) =>
           newLog[newLog.length - 1].response = data.response;
           return newLog;
         });
+
+        // Send assistant response to Chatbase
+        if (window.chatbase) {
+          window.chatbase('track', 'assistant_message', { message: data.response });
+        }
       } else {
         setError(data.error || 'Error from AI assistant');
       }
